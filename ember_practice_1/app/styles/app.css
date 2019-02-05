@@ -17,14 +17,53 @@ ul {
     align-items: center;
     background-color: #ff71ce;
 }
+.gridview {
+    padding-top: 5rem;
+    margin: 0 auto;
+    height: 90rem;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+}
 
-@media only screen and (min-width: 768px) {
+.content-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    z-index: 2;
+    background: url(/assets/images/walkman.png) right no-repeat;     
+}
+
+.content-2 {
+    z-index: -1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: url(/assets/images/vaporwave.jpg) top  no-repeat;
+}
+
+.content-3 {
+    grid-column-start: 1;
+    grid-column-end:  4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background: url(/assets/images/flyaway.jpg)  no-repeat;
+}
+
+.content-4 {
+    display: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
 
     .gridview {
         padding-top: 5rem;
         margin: 0 auto;
         height: 90rem;
-        width:80%;
+        width:90%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         display: grid;
